@@ -1,7 +1,7 @@
 /*****************  CSS RESPONSIVE *****************/
 @media (max-width: 1024px){
     .Principal, .VerInformacion{
-        width: 100vh !important;
+        width: 100% !important;
     }
 }
 @media (max-width: 768px){
