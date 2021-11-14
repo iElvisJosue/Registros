@@ -1,0 +1,46 @@
+:root{
+    --Negro: #000000;
+    --Blanco: #ffffff;
+    --AzulPastel: #a3cad6;
+    --AzulTexto: #659393;
+    --VerdePastel: #c2d6bd;
+    --VerdeTexto: #6e9566;
+    --NaranjaPastel: #f2dac6;
+    --NaranjaTexto: #db9862;
+    --RosaPastel: #efe0e0;
+    --RosaTexto: #cb9494;
+    --GrisPastel: #eeeeee;
+    --GrisOscuro: #747476;
+    --Rojo: #E7625F;
+    --Azul: #41729F;
+    --Verde: #81B622;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+/*****************  CSS DEL BODY *****************/
+body{
+    background: var(--AzulPastel);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+button, input{
+    outline: none;
+    border: none;
+}
+button:active{
+    transform: scale(.8);
+    cursor: pointer;
+    transition: .5s;
+}

@@ -1,0 +1,30 @@
+/*****************  CSS RESPONSIVE *****************/
+@media (max-width: 1024px){
+    .Principal, .VerInformacion{
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px){
+    .Registro {
+        grid-column: span 2;
+    }
+}
+@media (max-width: 540px){
+    .Informacion-FotoPerfil, .Informacion-Usuario{
+        width: 100% !important;
+    }
+    .Informacion-Usuario{
+        padding: 1rem !important;
+    }
+}
+@media (max-width: 414px){
+    *{
+        font-size: 9px;
+    }
+    .Seccion-1 .BarraBusqueda{
+        width: 85%;
+    }
+    .Seccion-1 .AgregarRegistro{
+        width: 15%;
+    }
+}

@@ -7,12 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="NuevoIndex.css">
+    <link rel="stylesheet" href="../css/Estandar.css">
+    <link rel="stylesheet" href="../css/Principal.css">
+    <link rel="stylesheet" href="../css/Responsive.css">
+    <link rel="stylesheet" href="../css/VerInformacion.css">
     <title>Document</title>
 </head>
 <body>
     
-    <main class="Contenedor">
+    <div class="Principal">
 
         <header class="Header">
             <img src="LogoRegistro.png" alt="Logo Empresa" class="Logo">
@@ -21,13 +24,15 @@
         <section class="Seccion-1">
             <div class="BarraBusqueda">
                 <ion-icon name="search-sharp" class="IconoBuscar"></ion-icon>
-                <input type="text" placeholder="Buscar" class="Buscar">
+                <input type="text" placeholder="Nombre, Concluido, Número, etc.." class="Buscar">
                 <ion-icon name="close-outline" class="IconoCerrar"></ion-icon>
             </div>
             <div class="AgregarRegistro">
                 <button class="NuevoRegistro"><ion-icon name="add-sharp"></ion-icon></button>
             </div>
         </section>
+        
+        <p class="Filtro">todos los registros</p>
 
         <section class="Seccion-2">
             <div class="Registro">
@@ -43,9 +48,9 @@
                     <button class="MostrarInformacion"><ion-icon name="eye-outline"></ion-icon></button>
                 </div>
             </div>
-            <div class="Registro">
+            <div class="Registro Concluido">
                 <div class="FotoDelUsuario">
-                    <img src="https://images.unsplash.com/photo-1590031906032-8678f12cb42a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
+                    <img src="https://images.unsplash.com/photo-1615241721719-cffa5802f256?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
                 </div>
                 <div class="Informacion">
                     <p class="ColoniaMunicipio">Acapulco de Juarez, Miguel de la Madrid</p>
@@ -53,25 +58,12 @@
                     <p class="Asunto">Lorem ipsum dolor sit amet consectetur adipiscing elit, cursus potenti platea aptent aliquet ut rut.</p>
                 </div>
                 <div class="VerUsuario">
-                    <button class="MostrarInformacion"><ion-icon name="eye-outline"></ion-icon></button>
+                    <button class="MostrarInformacion"><ion-icon name="checkmark-done-outline"></ion-icon></button>
                 </div>
             </div>
             <div class="Registro">
                 <div class="FotoDelUsuario">
-                    <img src="https://images.unsplash.com/photo-1620840167767-b11a4c8ca62a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="FotoPerfil" class="FotoPerfil">
-                </div>
-                <div class="Informacion">
-                    <p class="ColoniaMunicipio">Acapulco de Juarez, Miguel de la Madrid</p>
-                    <p class="Nombre">Elvis Josué Cortez Rivera</p>
-                    <p class="Asunto">Lorem ipsum dolor sit amet consectetur adipiscing elit, cursus potenti platea aptent aliquet ut rut.</p>
-                </div>
-                <div class="VerUsuario">
-                    <button class="MostrarInformacion"><ion-icon name="eye-outline"></ion-icon></button>
-                </div>
-            </div>
-            <div class="Registro">
-                <div class="FotoDelUsuario">
-                    <img src="https://images.unsplash.com/photo-1560724655-664912f2b6da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="FotoPerfil" class="FotoPerfil">
+                    <img src="https://images.unsplash.com/photo-1615241721719-cffa5802f256?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
                 </div>
                 <div class="Informacion">
                     <p class="ColoniaMunicipio">Acapulco de Juarez, Miguel de la Madrid</p>
@@ -95,9 +87,9 @@
                     <button class="MostrarInformacion"><ion-icon name="eye-outline"></ion-icon></button>
                 </div>
             </div>
-            <div class="Registro">
+            <div class="Registro Concluido">
                 <div class="FotoDelUsuario">
-                    <img src="https://images.unsplash.com/photo-1590031906032-8678f12cb42a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
+                    <img src="https://images.unsplash.com/photo-1615241721719-cffa5802f256?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
                 </div>
                 <div class="Informacion">
                     <p class="ColoniaMunicipio">Acapulco de Juarez, Miguel de la Madrid</p>
@@ -105,12 +97,12 @@
                     <p class="Asunto">Lorem ipsum dolor sit amet consectetur adipiscing elit, cursus potenti platea aptent aliquet ut rut.</p>
                 </div>
                 <div class="VerUsuario">
-                    <button class="MostrarInformacion"><ion-icon name="eye-outline"></ion-icon></button>
+                    <button class="MostrarInformacion"><ion-icon name="checkmark-done-outline"></ion-icon></button>
                 </div>
             </div>
-            <div class="Registro">
+            <div class="Registro Concluido">
                 <div class="FotoDelUsuario">
-                    <img src="https://images.unsplash.com/photo-1620840167767-b11a4c8ca62a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="FotoPerfil" class="FotoPerfil">
+                    <img src="https://images.unsplash.com/photo-1615241721719-cffa5802f256?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
                 </div>
                 <div class="Informacion">
                     <p class="ColoniaMunicipio">Acapulco de Juarez, Miguel de la Madrid</p>
@@ -118,12 +110,25 @@
                     <p class="Asunto">Lorem ipsum dolor sit amet consectetur adipiscing elit, cursus potenti platea aptent aliquet ut rut.</p>
                 </div>
                 <div class="VerUsuario">
-                    <button class="MostrarInformacion"><ion-icon name="eye-outline"></ion-icon></button>
+                    <button class="MostrarInformacion"><ion-icon name="checkmark-done-outline"></ion-icon></button>
                 </div>
             </div>
+            <div class="Registro Concluido">
+                <div class="FotoDelUsuario">
+                    <img src="https://images.unsplash.com/photo-1615241721719-cffa5802f256?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
+                </div>
+                <div class="Informacion">
+                    <p class="ColoniaMunicipio">Acapulco de Juarez, Miguel de la Madrid</p>
+                    <p class="Nombre">Elvis Josué Cortez Rivera</p>
+                    <p class="Asunto">Lorem ipsum dolor sit amet consectetur adipiscing elit, cursus potenti platea aptent aliquet ut rut.</p>
+                </div>
+                <div class="VerUsuario">
+                    <button class="MostrarInformacion"><ion-icon name="checkmark-done-outline"></ion-icon></button>
+                </div>
+            </div> 
             <div class="Registro">
                 <div class="FotoDelUsuario">
-                    <img src="https://images.unsplash.com/photo-1560724655-664912f2b6da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="FotoPerfil" class="FotoPerfil">
+                    <img src="https://images.unsplash.com/photo-1615241721719-cffa5802f256?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="FotoPerfil" class="FotoPerfil">
                 </div>
                 <div class="Informacion">
                     <p class="ColoniaMunicipio">Acapulco de Juarez, Miguel de la Madrid</p>
@@ -136,8 +141,80 @@
             </div>
         </section>
         
-    </main>
+    </div>
 
+    <div class="VerInformacion">
+        <section class="Informacion-FotoPerfil">
+            <!-- <img src="https://images.pexels.com/photos/1236678/pexels-photo-1236678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Foto del usuario" class="Informacion-ImgUsuario"> -->
+            <img src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Foto del usuario" class="Informacion-ImgUsuario">
+            <div class="Informacion-Modificaciones">
+                <span class="Informacion-Cerrar"><ion-icon name="chevron-back-outline" class="Informacion-IconoCerrar"></ion-icon></span>
+                <div class="Informacion-ModificacionesOpciones">
+                        <ion-icon name="checkmark-outline" class="Informacion-Concluido"></ion-icon>
+                        <ion-icon name="create-outline" class="Informacion-Editar"></ion-icon>
+                        <ion-icon name="close-outline" class="Informacion-Eliminar"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section class="Informacion-Usuario">
+            <p class="Informacion-Nombre">Elvis Josué Cortez Rivera</p>
+            <div class="Informacion-Importante">
+                <div class="Informacion-Ocupacion">
+                    <span class="Informacion-IconoOcupacion"><ion-icon name="briefcase-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesOcupacion">
+                        <p class="Informacion-TituloOcupacion">ocupación</p>
+                        <p class="Informacion-NombreOcupacion">Profesor</p>
+                    </div>
+                </div>
+                <div class="Informacion-Telefono">
+                    <span class="Informacion-IconoTelefono"><ion-icon name="call-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesTelefono">
+                        <p class="Informacion-TituloTelefono">teléfono</p>
+                        <p class="Informacion-NumeroTelefono">7441595198</p>
+                    </div>
+                </div>
+                <div class="Informacion-Municipio">
+                    <span class="Informacion-IconoMunicipio"><ion-icon name="map-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesMunicipio">
+                        <p class="Informacion-TituloMunicipio">municipio</p>
+                        <p class="Informacion-NombreMunicipio">Acapulco de Juarez</p>
+                    </div>
+                </div>
+                <div class="Informacion-Colonia">
+                    <span class="Informacion-IconoColonia"><ion-icon name="location-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesColonia">
+                        <p class="Informacion-TituloColonia">Colonia</p>
+                        <p class="Informacion-NombreColonia">Miguel de la madrid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Informacion-Asunto">
+                <p class="Informacion-PresentacionAsunto">asunto</p>
+                <p class="Informacion-DetallesAsunto">Reunion en la ofinica de BBVA a las 15:00 HRS</p>
+            </div>
+            <div class="Informacion-Comentarios">
+                <p class="Informacion-PresentacionComentario">comentarios</p>
+                <p class="Informacion-DetallesComentario">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt commodi nobis repudiandae. Libero consectetur facere accusantium, inventore dolor est magnam. Est unde sint magnam ex repellat voluptates quis perspiciatis atque impedit eligendi, laudantium optio vitae, nemo id quod quaerat officia tempore molestias quisquam sed corporis, quia dolore? Deserunt, blanditiis reiciendis.</p>
+            </div>
+            <p class="Informacion-Documentos">Documentos</p>
+            <div class="Informacion-ListaDocumentos">
+                <p>Doumento 1</p>
+                <p>Doumento 2</p>
+                <p>Doumento 3</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- <script>
+        var win = window,
+        doc = document,
+        docElem = doc.documentElement,
+        body = doc.getElementsByTagName('body')[0],
+        x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+        y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+        alert(x + ' × ' + y);
+    </script> -->
+    <script src="../js/animaciones.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

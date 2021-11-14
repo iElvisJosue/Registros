@@ -1,0 +1,246 @@
+
+
+/*****************  CSS DEL CONTENEDOR *****************/
+.Principal{
+    width: 100rem; /* 1000PX */
+    height: 100%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* 20PX */
+    overflow: auto;
+}
+.Principal::-webkit-scrollbar{
+    display: none;
+}
+
+/*****************  CSS DEL HEADER *****************/
+.Header{
+    width: 95%;
+    min-height: 7rem; /* 70PX */
+    max-height: 7rem; /* 70PX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header .Logo{
+    height: 90%;
+}
+
+/*****************  CSS DE LA SECCION 1 *****************/
+.Seccion-1{
+    position: sticky;
+    top: 0;
+    background: var(--Blanco);
+    width: 95%;
+    min-height: 8rem; /* 60PX */
+    max-height: 8rem; /* 60PX */
+    display: flex;
+    gap: 1rem; /* 10PX */
+    z-index: 999;
+    padding: 1rem 0px;
+} 
+
+/*****************  CSS DE LA BARRA DE BUSQUEDA *****************/
+.BarraBusqueda{
+    width: 90%;
+    position: relative;
+}
+.Buscar{
+    width: 100%;
+    height: 100%;
+    background:rgba(242,218,198,.5);
+    border-radius: 1rem; /* 10PX */
+    padding: 0px 3.5rem; /* 35PX */
+    font-size: 1.5rem; /* 15PX */
+}
+.IconoBuscar{
+    position: absolute;
+    font-size: 2rem; /* 20PX */
+    top: calc(50% - 1rem); /* 10PX */
+    left: 1rem; /* 10PX */
+}
+.IconoCerrar{
+    position: absolute;
+    font-size: 2rem; /* 20PX */
+    top: calc(50% - 1rem); /* 10PX */
+    right: 1rem; /* 10PX */
+}
+
+/*****************  CSS DE AGREGAR REGISTRO *****************/
+.AgregarRegistro{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NuevoRegistro{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem; /* 10PX */
+    line-height: 1rem; /* 10PX */
+    background: var(--AzulPastel);
+    border-radius: 1rem;
+}
+.NuevoRegistro ion-icon{
+    color: var(--Blanco);
+    font-size: 3em; /* 25PX */
+    font-weight: 900;
+}
+
+
+/*****************  CSS DEL FILTRO *****************/
+.Filtro{
+    width: 95%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*****************  CSS DE LA SECCION 2 *****************/
+.Seccion-2{
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* 10PX */
+    padding-bottom: 1rem; /* 10PX */
+}
+
+
+
+/*****************  CSS DEL REGISTRO *****************/
+.Registro{
+    width: 100%;
+    height: 15rem; /* 150PX */
+    grid-column: span 1;
+    border-radius: 1rem; /* 10PX */
+    display: flex;
+    gap: .5rem;
+    overflow: hidden;
+}
+.Registro:nth-child(4n - 3){
+    background: var(--VerdePastel);
+}
+.Registro:nth-child(4n - 2){
+    background: var(--AzulPastel);
+}
+.Registro:nth-child(4n - 1){
+    background: var(--NaranjaPastel);
+}
+.Registro:nth-child(4n){
+    background: var(--RosaPastel);
+}
+.Registro.Concluido{
+    filter: grayscale(100%);
+    pointer-events: none;
+    background: var(--GrisPastel);
+}
+.Registro.Concluido .ColoniaMunicipio, 
+.Registro.Concluido .Nombre, 
+.Registro.Concluido .Asunto{
+    color: black !important;
+    font-weight: normal !important;
+}
+/*****************  CSS DE LA FOTO DE USUARIO *****************/
+.FotoDelUsuario{
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FotoPerfil{
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 90%;
+    border-radius: 1rem; /* 10PX */
+}
+
+/*****************  CSS DE LA INFORMACION *****************/
+.Informacion{
+    min-width: 5%;
+    max-width: 55%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem; /* 5PX */
+} 
+.ColoniaMunicipio, .Nombre, .Asunto{
+    width: 100%;
+    text-align: justify;
+}
+.Nombre{
+    font-size: 1.5rem; /* 15PX */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Registro:nth-child(4n - 3) .ColoniaMunicipio,
+.Registro:nth-child(4n - 2) .ColoniaMunicipio,
+.Registro:nth-child(4n - 1) .ColoniaMunicipio,
+.Registro:nth-child(4n) .ColoniaMunicipio
+{
+    color: var(--Negro);
+    opacity: .8;
+}
+.Registro:nth-child(4n - 3) .Asunto{
+    color: var(--VerdeTexto);
+    font-weight: bold;
+}
+.Registro:nth-child(4n - 3) .MostrarInformacion ion-icon{
+    color: var(--VerdeTexto);
+}
+.Registro:nth-child(4n - 2) .Asunto{
+    color: var(--AzulTexto);
+    font-weight: bold;
+}
+.Registro:nth-child(4n - 2) .MostrarInformacion ion-icon{
+    color: var(--AzulTexto);
+}
+.Registro:nth-child(4n - 1) .Asunto{
+    color: var(--NaranjaTexto);
+    font-weight: bold;
+}
+.Registro:nth-child(4n - 1) .MostrarInformacion ion-icon{
+    color: var(--NaranjaTexto);
+}
+.Registro:nth-child(4n) .Asunto{
+    color: var(--RosaTexto);
+    font-weight: bold;
+}
+.Registro:nth-child(4n) .MostrarInformacion ion-icon{
+    color: var(--RosaTexto);
+}
+
+/*****************  CSS DE VER USUARIO *****************/
+.VerUsuario{
+    min-width: 15%;
+    max-width: 15%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MostrarInformacion{
+    font-size: 1rem; /* 10PX */
+    line-height: 1rem; /* 10PX */
+    padding: 1rem; /* 10PX */
+    border-radius: 50%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.MostrarInformacion ion-icon{
+    font-size: 2.5rem; /* 25PX */
+    font-weight: bold;
+}

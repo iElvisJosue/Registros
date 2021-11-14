@@ -1,0 +1,184 @@
+/*****************  CSS DEL CONTENEDOR *****************/
+.VerInformacion{
+    position: absolute;
+    width: 100rem; /* 1000PX */
+    height: 100%;
+    background: var(--Blanco);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 2rem; 
+    overflow: auto; */
+    z-index: 1000;
+    bottom: -100%;
+    transition: .5s;
+    overflow: auto;
+}
+.VerInformacion::-webkit-scrollbar{
+    display: none;
+}
+.Informacion-Mostrar{
+    bottom: 0;
+}
+/*****************  CSS DE LA FOTO DE PERFIL DEL USUARIO *****************/
+.Informacion-FotoPerfil{
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--GrisPastel);
+}
+.Informacion-ImgUsuario {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+
+/*****************  CSS DE LAS OPCIONES DE EDIT *****************/
+.Informacion-Modificaciones{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Informacion-Cerrar{
+    background: var(--GrisOscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Informacion-ModificacionesOpciones{
+    display: flex;
+}
+.Informacion-Concluido{
+    background: var(--Verde);
+}
+.Informacion-Editar{
+    background: var(--Azul);
+}
+.Informacion-Eliminar{
+    background: var(--Rojo);
+}
+.Informacion-IconoCerrar,
+.Informacion-Concluido,
+.Informacion-Editar,
+.Informacion-Eliminar
+{
+    padding: .5rem;
+    color: var(--Blanco);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+/*****************  CSS DE LA INFORMACION DEL USUARIO *****************/
+.Informacion-Usuario{
+    width: 50rem;
+    height: auto;
+    background: var(--Blanco);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Informacion-Nombre{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--GrisOscuro);
+}
+
+/*****************  CSS DE LA INFORMACION IMPORTANTE *****************/
+.Informacion-Importante{
+    width: 100%;
+    min-height: 15rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/*****************  CSS DE LA INFORMACION IMPORTANTE A DETALLES *****************/
+
+.Informacion-Ocupacion, 
+.Informacion-Telefono,
+.Informacion-Municipio,
+.Informacion-Colonia{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-radius: 1rem;
+    display: flex;
+    background: var(--GrisPastel);
+}
+.Informacion-IconoOcupacion,
+.Informacion-IconoTelefono,
+.Informacion-IconoMunicipio,
+.Informacion-IconoColonia
+{
+    width: 30%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.Informacion-DetallesOcupacion,
+.Informacion-DetallesTelefono,
+.Informacion-DetallesMunicipio,
+.Informacion-DetallesColonia
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Informacion-Ocupacion .Informacion-TituloOcupacion,
+.Informacion-Telefono .Informacion-TituloTelefono,
+.Informacion-Municipio .Informacion-TituloMunicipio,
+.Informacion-Colonia .Informacion-TituloColonia
+{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--GrisOscuro);
+}
+.Informacion-Ocupacion .Informacion-NombreOcupacion,
+.Informacion-Telefono .Informacion-NumeroTelefono,
+.Informacion-Municipio .Informacion-NombreMunicipio,
+.Informacion-Colonia .Informacion-NombreColonia
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--GrisOscuro);
+}
+.Informacion-Ocupacion .Informacion-IconoOcupacion ion-icon,
+.Informacion-Telefono .Informacion-IconoTelefono ion-icon,
+.Informacion-Municipio .Informacion-IconoMunicipio ion-icon,
+.Informacion-Colonia .Informacion-IconoColonia ion-icon
+{
+    font-size: 2.5rem;
+    color: var(--GrisOscuro);
+}
+/*****************  CSS DE LA INFORMACION DEL ASUNTO *****************/
+.Informacion-Asunto,
+.Informacion-Comentarios{
+    width: 100%;
+    height: auto;
+}
+.Informacion-PresentacionAsunto,
+.Informacion-PresentacionComentario{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--GrisOscuro);
+}
+.Informacion-DetallesAsunto,
+.Informacion-DetallesComentario{
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+}
