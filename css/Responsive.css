@@ -16,6 +16,9 @@
     .Informacion-Usuario{
         padding: 1rem !important;
     }
+    .VerInformacion{
+        height: 50vh !important;
+    }
 }
 @media (max-width: 414px){
     *{
