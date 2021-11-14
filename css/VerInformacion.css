@@ -10,7 +10,7 @@
     align-items: center;
     /* gap: 2rem; 
     overflow: auto; */
-    z-index: 1000;
+    z-index: -1;
     bottom: -100%;
     transition: .5s;
     overflow: auto;
@@ -19,6 +19,7 @@
     display: none;
 }
 .Informacion-Mostrar{
+    z-index: 1000;
     bottom: 0;
 }
 /*****************  CSS DE LA FOTO DE PERFIL DEL USUARIO *****************/
