@@ -39,7 +39,7 @@
     max-height: 8rem; /* 60PX */
     display: flex;
     gap: 1rem; /* 10PX */
-    z-index: 999;
+    z-index: 1;
     padding: 1rem 0px;
 } 
 
