@@ -84,6 +84,7 @@
     line-height: 1rem; /* 10PX */
     background: var(--AzulPastel);
     border-radius: 1rem;
+    cursor: pointer;
 }
 .NuevoRegistro ion-icon{
     color: var(--Blanco);

@@ -35,7 +35,7 @@ body{
     justify-content: center;
     overflow: hidden;
 }
-button, input{
+button, input, select, textarea{
     outline: none;
     border: none;
 }

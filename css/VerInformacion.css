@@ -8,8 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 2rem; 
-    overflow: auto; */
     z-index: -1;
     bottom: -100%;
     transition: .5s;
@@ -86,13 +84,6 @@
     flex-direction: column;
     gap: 1rem;
 }
-.Informacion-Nombre{
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--GrisOscuro);
-}
 
 /*****************  CSS DE LA INFORMACION IMPORTANTE *****************/
 .Informacion-Importante{
@@ -160,26 +151,79 @@
 .Informacion-Ocupacion .Informacion-IconoOcupacion ion-icon,
 .Informacion-Telefono .Informacion-IconoTelefono ion-icon,
 .Informacion-Municipio .Informacion-IconoMunicipio ion-icon,
-.Informacion-Colonia .Informacion-IconoColonia ion-icon
+.Informacion-Colonia .Informacion-IconoColonia ion-icon,
+.Informacion-ArchivoIcono ion-icon,
+.Informacion-DescargarIcono ion-icon,
+.Informacion-EliminarIcono ion-icon
 {
     font-size: 2.5rem;
     color: var(--GrisOscuro);
 }
-/*****************  CSS DE LA INFORMACION DEL ASUNTO *****************/
+
+
+/*****************  CSS DE LA INFORMACION VARIOS *****************/
 .Informacion-Asunto,
-.Informacion-Comentarios{
+.Informacion-Comentarios,
+.Informacion-Documentos
+{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+.Informacion-DetallesAsunto,
+.Informacion-DetallesComentario
+{
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+}
+.Informacion-Nombre,
 .Informacion-PresentacionAsunto,
-.Informacion-PresentacionComentario{
+.Informacion-PresentacionComentario,
+.Informacion-PresentacionDocumentos
+{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--GrisOscuro);
 }
-.Informacion-DetallesAsunto,
-.Informacion-DetallesComentario{
+
+/*****************  CSS DE LA INFORMACION DE DOCUMENTOS *****************/
+.Informacion-ListaDocumentos{
+    height: 7rem;
+    border-radius: 1rem;
+    display: flex;
+    background: var(--GrisPastel);
+}
+.Informacion-NombreDelArchivo
+{
+    width: 70%;
+    height: 100%;
     font-size: 1.3rem;
     color: var(--GrisOscuro);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Informacion-ArchivoIcono,
+.Informacion-DescargarIcono,
+.Informacion-EliminarIcono
+{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Informacion-DescargarIcono ion-icon
+{
+    color: var(--Azul);
+}
+.Informacion-EliminarIcono ion-icon{
+    color: var(--Rojo);
+}
+.Informacion-DescargarIcono,
+.Informacion-EliminarIcono{
+    cursor: pointer;
 }
