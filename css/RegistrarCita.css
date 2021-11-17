@@ -1,5 +1,5 @@
 /*****************  CSS DEL REGISTRO DE USUARIO *****************/
-.RegistrarContacto{
+.RegistrarCita{
     position: absolute;
     width: 100rem; /* 1000PX */
     height: 100%;
@@ -13,15 +13,15 @@
     transition: .5s;
     overflow: auto;
 }
-.RegistrarContacto::-webkit-scrollbar{
+.RegistrarCita::-webkit-scrollbar{
     display: none;
 }
-.RegistrarContacto-Mostrar{
+.RegistrarCita-Mostrar{
     z-index: 1000;
     bottom: 0;
 }
 /*****************  CSS DEL FORMULARIO DE REGISTRAR INFORMACION *****************/
-.Form-Informacion{
+.Form-Cita{
     position: relative;
     width: 50rem;
     height: auto;
@@ -36,12 +36,12 @@
 
 
 /*****************  CSS DEL FORMULARIO DEL ENCABEZADO DEL FORMULARIO *****************/
-.Form-Titulo{
+.Form-TituloCita{
     width: 100%;
     height: 3.5rem;
     display: flex;
 }
-.Form-RegistrarCerrar{
+.Form-CitaCerrar{
     height: 100%;
     background: var(--GrisOscuro);
     cursor: pointer;
@@ -49,12 +49,12 @@
     align-items: center;
     justify-content: center;
 }
-.Form-IconoCerrar{
+.Form-IconoCitaCerrar{
     color: var(--Blanco);
     font-size: 2.5rem;
     padding: 0 .5rem;
 }
-.Form-TituloRegistrar{
+.Form-TituloRegistrarCita{
     width: 100%;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -62,28 +62,30 @@
     text-align: center;
 }
 /*****************  CSS DEL FORMULARIO DE LOS INPUTS DEL FORMULARIO *****************/
-.Form-Nombre,
-.Form-Telefono,
-.Form-Ocupacion,
-.Form-Municipio,
-.Form-Colonia,
-.Form-Calle,
-.Form-Comentario,
-.Form-Archivo
+.Form-CitaNombre,
+.Form-CitaFecha,
+.Form-CitaHora,
+.Form-CitaMunicipio,
+.Form-CitaColonia,
+.Form-CitaCalle,
+.Form-CitaAsunto,
+.Form-CitaComentarios,
+.Form-CitaArchivos
 {
     width: 100%;
     height: 6rem;
     display: flex;
     flex-direction: column;
 }
-.Form-TituloNombre,
-.Form-TituloTelefono,
-.Form-TituloOcupacion,
-.Form-TituloMunicipio,
-.Form-TituloColonia,
-.Form-TituloCalle,
-.Form-TituloComentario,
-.Form-TituloArchivo
+.Form-CitaTituloNombre,
+.Form-CitaTituloFecha,
+.Form-CitaTituloHora,
+.Form-CitaTituloMunicipio,
+.Form-CitaTituloColonia,
+.Form-CitaTituloCalle,
+.Form-CitaTituloAsunto,
+.Form-CitaTituloComentarios,
+.Form-CitaTituloArchivo
 {
     height: 2rem;
     font-size: 1.3rem;
@@ -91,12 +93,15 @@
     font-weight: bold;
     text-transform: uppercase;
 }
-.Form-InputNombre,
-.Form-InputOcupacion,
-.Form-InputTelefono,
-.Form-InputCalle,
-.Form-InputComentario,
-.Form-InputArchivo
+.Form-CitaInputNombre,
+.Form-CitaInputFecha,
+.Form-CitaInputHora,
+.Form-CitaInputMunicipio,
+.Form-CitaInputColonia,
+.Form-CitaInputCalle,
+.Form-CitaInputAsunto,
+.Form-CitaInputComentarios,
+.Form-CitaInputArchivo
 {
     width: 100%;
     height: 4rem;
@@ -105,24 +110,6 @@
     padding: 1rem 0;
     border: transparent;
     border-bottom: 1px solid var(--GrisOscuro);
-}
-.Form-InputMunicipio,
-.Form-InputColonia
-{
-    appearance: none;
-    height: 4rem;
-    font-size: 1.3rem;
-    color: var(--GrisOscuro);
-    border-bottom: 1px solid var(--GrisOscuro);
-    cursor: pointer;
-}
-.Form-InputMunicipio option,
-.Form-InputColonia option
-{
-    appearance: none;
-    font-size: 1.3rem;
-    background: var(--GrisPastel);
-    color: var(--GrisOscuro);
 }
 .Form-GuardarRegistro{
     width: 100%;

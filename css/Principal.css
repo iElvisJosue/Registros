@@ -71,13 +71,22 @@
 
 /*****************  CSS DE AGREGAR REGISTRO *****************/
 .AgregarRegistro{
+    position: relative;
     width: 10%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.NuevoRegistro{
+.NuevoRC{
+    position: absolute;
+}
+.NuevoContacto, .NuevaCita{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.NuevoRC, .NuevoContacto, .NuevaCita{
     width: 100%;
     height: 100%;
     font-size: 1rem; /* 10PX */
@@ -85,14 +94,21 @@
     background: var(--AzulPastel);
     border-radius: 1rem;
     cursor: pointer;
+    transition: .5s;
 }
-.NuevoRegistro ion-icon{
+.NuevoRC ion-icon, .NuevoContacto ion-icon, .NuevaCita ion-icon{
     color: var(--Blanco);
     font-size: 3em; /* 25PX */
     font-weight: 900;
 }
-
-
+.MostrarNuevoContacto{
+    top: calc(100% + 1rem);
+    z-index: 1;
+}
+.MostrarNuevaCita{
+    top: calc(200% + 2rem);
+    z-index: 1;
+}
 /*****************  CSS DEL FILTRO *****************/
 .Filtro{
     width: 95%;

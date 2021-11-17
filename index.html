@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/Responsive.css">
     <link rel="stylesheet" href="css/VerInformacion.css">
     <link rel="stylesheet" href="css/RegistrarUsuario.css">
+    <link rel="stylesheet" href="css/RegistrarCita.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +29,9 @@
                 <ion-icon name="close-outline" class="IconoCerrar"></ion-icon>
             </div>
             <div class="AgregarRegistro">
-                <button class="NuevoRegistro"><ion-icon name="add-sharp"></ion-icon></button>
+                <button class="NuevoRC"><ion-icon name="add-sharp"></ion-icon></button>
+                <button class="NuevoContacto"><ion-icon name="person-circle-outline"></ion-icon></button>
+                <button class="NuevaCita"><ion-icon name="calendar-number-outline"></ion-icon></button>
             </div>
         </section>
         
@@ -252,25 +255,25 @@
         </section>
     </div>
 
-    <div class="RegistrarUsuario" id="RegistrarUsuario">
-            <form class="Form-Informacion" id="Form-RegistrarUsuario">
+    <div class="RegistrarContacto">
+            <form class="Form-Informacion">
                 <div class="Form-Titulo">
                     <span class="Form-RegistrarCerrar">
-                        <ion-icon name="chevron-back-outline" class="Registrar-IconoCerrar"></ion-icon>
+                        <ion-icon name="chevron-back-outline" class="Form-IconoCerrar"></ion-icon>
                     </span>
-                    <p class="Form-TituloRegistrar">agregar nuevo registro</p>
+                    <p class="Form-TituloRegistrar">agregar nuevo contacto</p>
                 </div>
                 <div class="Form-Nombre">
                     <p class="Form-TituloNombre">Nombre</p>
                     <input type="text" maxlength="" id="" class="Form-InputNombre" required>
                 </div>
-                <div class="Form-Ocupacion">
-                    <p class="Form-TituloOcupacion">Ocupacion</p>
-                    <input type="text" maxlength="" id="" class="Form-InputOcupacion" required>
-                </div>
                 <div class="Form-Telefono">
                     <p class="Form-TituloTelefono">Telefono</p>
                     <input type="text" maxlength="" id="" class="Form-InputTelefono" required>
+                </div>
+                <div class="Form-Ocupacion">
+                    <p class="Form-TituloOcupacion">Ocupacion</p>
+                    <input type="text" maxlength="" id="" class="Form-InputOcupacion" required>
                 </div>
                 <div class="Form-Municipio">
                     <p class="Form-TituloMunicipio">Municipio</p>
@@ -286,22 +289,73 @@
                         <option value="dog">Miguel de la madrid</option>        
                     </select>
                 </div>
-                <div class="Form-Asunto">
-                    <p class="Form-TituloAsunto">Asunto</p>
-                    <input type="text" maxlength="" id="" class="Form-InputAsunto" required></input>
-                </div>
-                <div class="Form-Comentario">
-                    <p class="Form-TituloComentario">Comentario</p>
-                    <input type="text" maxlength="" id="" class="Form-InputComentario" required></input>
+                <div class="Form-Calle">
+                    <p class="Form-TituloCalle">Calle</p>
+                    <input type="text" maxlength="" id="" class="Form-InputCalle" required></input>
                 </div>
                 <div class="Form-Archivo">
-                    <p class="Form-TituloArchivo">Archivo</p>
-                    <input type="file" id="" class="Form-InputArchivo" required>
+                    <p class="Form-TituloArchivo">Foto</p>
+                    <input type="file" id="" class="Form-InputArchivo" accept="image/*">
                 </div>
                 <button type="submit" id="" class="Form-GuardarRegistro">Guardar</button>
             </form>
     </div>
 
+    <div class="RegistrarCita">
+            <form class="Form-Cita" enctype="multipart/form-data">
+                <div class="Form-TituloCita">
+                    <span class="Form-CitaCerrar">
+                        <ion-icon name="chevron-back-outline" class="Form-IconoCitaCerrar"></ion-icon>
+                    </span>
+                    <p class="Form-TituloRegistrarCita">agregar nueva cita</p>
+                </div>
+                <div class="Form-CitaNombre">
+                    <p class="Form-CitaTituloNombre">Nombre del contacto</p>
+                    <input type="text" maxlength="" id="" class="Form-CitaInputNombre" required>
+                </div>
+                <div class="Form-CitaFecha">
+                    <p class="Form-CitaTituloFecha">Fecha de encuentro</p>
+                    <input type="date" min="2022-01-01" max="2100-12-31" class="Form-CitaInputFecha">
+                </div>
+                <div class="Form-CitaHora">
+                    <p class="Form-CitaTituloHora">Hora de encuentro</p>
+                    <input type="time" class="Form-CitaInputHora">
+                </div>
+                <div class="Form-CitaMunicipio">
+                    <p class="Form-CitaTituloMunicipio">Municipio</p>
+                    <input type="text" maxlength="" id="" class="Form-CitaInputMunicipio" required>
+                </div>
+                <div class="Form-CitaColonia">
+                    <p class="Form-CitaTituloColonia">Colonia</p>
+                    <input type="text" maxlength="" id="" class="Form-CitaInputColonia" required>
+                </div>
+                <div class="Form-CitaCalle">
+                    <p class="Form-CitaTituloCalle">Calle</p>
+                    <input type="text" maxlength="" id="" class="Form-CitaInputCalle" required>
+                </div>
+                <div class="Form-CitaAsunto">
+                    <p class="Form-CitaTituloAsunto">Asunto</p>
+                    <input type="text" maxlength="" id="" class="Form-CitaInputAsunto" required>
+                </div>
+                <div class="Form-CitaComentarios">
+                    <p class="Form-CitaTituloComentarios">Comentarios</p>
+                    <input type="text" maxlength="" id="" class="Form-CitaInputComentarios" required>
+                </div>
+                <div class="Form-CitaArchivos">
+                    <p class="Form-CitaTituloArchivo">Archivos (Max: 5)</p>
+                    <input type="file" id="" class="Form-CitaInputArchivo" multiple>
+                </div>
+                <button type="submit" id="" class="Form-GuardarRegistro">Guardar</button>
+            </form>
+    </div>
+
+<!-- 
+    <script>
+
+    var f = new Date();
+    alert(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+    
+    </script> -->
     <!-- <script>
         var win = window,
         doc = document,
