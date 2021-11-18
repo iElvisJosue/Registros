@@ -75,7 +75,7 @@
     cursor: pointer;
 }
 /*****************  CSS DE LA INFORMACION DEL USUARIO *****************/
-.Informacion-Usuario{
+.Informacion-DatosDeLaCita{
     width: 50rem;
     height: auto;
     background: var(--Blanco);
@@ -86,42 +86,79 @@
 }
 
 /*****************  CSS DE LA INFORMACION IMPORTANTE *****************/
-.Informacion-Importante{
+.Informacion-DatosDelContacto{
     width: 100%;
-    min-height: 15rem;
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
 }
 
 /*****************  CSS DE LA INFORMACION IMPORTANTE A DETALLES *****************/
-
-.Informacion-Ocupacion, 
-.Informacion-Telefono,
-.Informacion-Municipio,
-.Informacion-Colonia{
-    grid-column: span 1;
-    grid-row: span 1;
+.Informacion-ListaDocumentos{
+    grid-column: span 2;
     border-radius: 1rem;
+    min-height: 7rem;
     display: flex;
     background: var(--GrisPastel);
 }
-.Informacion-IconoOcupacion,
+.Informacion-CalleDeLaCita{
+    grid-column: span 2 !important;
+}
+.Informacion-NombreContacto,
+.Informacion-Telefono,
+.Informacion-FechaDeLaCita,
+.Informacion-HoraDeLaCita,
+.Informacion-MunicipioDeLaCita,
+.Informacion-ColoniaDeLaCita,
+.Informacion-CalleDeLaCita
+{
+    grid-column: span 1;
+    border-radius: 1rem;
+    min-height: 7rem;
+    display: flex;
+    background: var(--GrisPastel);
+}
+.Informacion-IconoCalle{
+    width: 15% !important;
+}
+.Informacion-IconoNombre,
 .Informacion-IconoTelefono,
+.Informacion-IconoFecha,
+.Informacion-IconoHora,
 .Informacion-IconoMunicipio,
-.Informacion-IconoColonia
+.Informacion-IconoColonia,
+.Informacion-IconoCalle
 {
     width: 30%;
     height: 100%;
     display: grid;
     place-items: center;
 }
-.Informacion-DetallesOcupacion,
+.Informacion-IconoNombre ion-icon,
+.Informacion-IconoTelefono ion-icon,
+.Informacion-IconoFecha ion-icon,
+.Informacion-IconoHora ion-icon,
+.Informacion-IconoMunicipio ion-icon,
+.Informacion-IconoColonia ion-icon,
+.Informacion-IconoCalle ion-icon,
+.Informacion-IconoDocumento ion-icon,
+.Informacion-IconoDescargar ion-icon,
+.Informacion-IconoEliminar ion-icon
+{
+    font-size: 2.5rem;
+    color: var(--GrisOscuro);
+}
+.Informacion-DetallesCalle{
+    width: 85% !important;
+}
+.Informacion-DetallesNombre,
 .Informacion-DetallesTelefono,
+.Informacion-DetallesFecha,
+.Informacion-DetallesHora,
 .Informacion-DetallesMunicipio,
-.Informacion-DetallesColonia
+.Informacion-DetallesColonia,
+.Informacion-DetallesCalle
 {
     width: 70%;
     height: 100%;
@@ -130,65 +167,54 @@
     align-items: flex-start;
     justify-content: center;
 }
-.Informacion-Ocupacion .Informacion-TituloOcupacion,
-.Informacion-Telefono .Informacion-TituloTelefono,
-.Informacion-Municipio .Informacion-TituloMunicipio,
-.Informacion-Colonia .Informacion-TituloColonia
+.Informacion-TituloNombre,
+.Informacion-TituloTelefono,
+.Informacion-TituloFecha,
+.Informacion-TituloHora,
+.Informacion-TituloMunicipio,
+.Informacion-TituloColonia,
+.Informacion-TituloCalle
 {
     font-size: 1rem;
     text-transform: uppercase;
     color: var(--GrisOscuro);
 }
-.Informacion-Ocupacion .Informacion-NombreOcupacion,
-.Informacion-Telefono .Informacion-NumeroTelefono,
-.Informacion-Municipio .Informacion-NombreMunicipio,
-.Informacion-Colonia .Informacion-NombreColonia
+.Informacion-NombreCompleto,
+.Informacion-NumeroTelefono,
+.Informacion-FechaFinal,
+.Informacion-HoraFinal,
+.Informacion-MunicipioFinal,
+.Informacion-ColoniaFinal,
+.Informacion-CalleFinal
 {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--GrisOscuro);
-}
-.Informacion-Ocupacion .Informacion-IconoOcupacion ion-icon,
-.Informacion-Telefono .Informacion-IconoTelefono ion-icon,
-.Informacion-Municipio .Informacion-IconoMunicipio ion-icon,
-.Informacion-Colonia .Informacion-IconoColonia ion-icon,
-.Informacion-ArchivoIcono ion-icon,
-.Informacion-DescargarIcono ion-icon,
-.Informacion-EliminarIcono ion-icon
-{
-    font-size: 2.5rem;
-    color: var(--GrisOscuro);
+    text-transform: uppercase;
 }
 
 
 /*****************  CSS DE LA INFORMACION VARIOS *****************/
-.Informacion-Asunto,
-.Informacion-Comentarios,
-.Informacion-Documentos
-{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.Informacion-DetallesAsunto,
-.Informacion-DetallesComentario
-{
-    font-size: 1.3rem;
-    color: var(--GrisOscuro);
-}
-.Informacion-Nombre,
-.Informacion-PresentacionAsunto,
-.Informacion-PresentacionComentario,
-.Informacion-PresentacionDocumentos
-{
+.Informacion-TituloDatosContacto,
+.Informacion-TituloDatosCita,
+.Informacion-TituloAsuntoDeLaCita,
+.Informacion-TituloComentariosDeLaCita,
+.Informacion-TituloDocumentos
+{   
+    grid-column: span 2;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--GrisOscuro);
 }
-
+.Informacion-FinalAsuntoDeLaCita,
+.Informacion-FinalComentariosDeLaCita
+{
+    grid-column: span 2;
+    font-size: 1.3rem;
+    color: var(--GrisOscuro);
+    text-transform: uppercase;
+}
 /*****************  CSS DE LA INFORMACION DE DOCUMENTOS *****************/
 .Informacion-ListaDocumentos{
     height: 7rem;
@@ -196,19 +222,20 @@
     display: flex;
     background: var(--GrisPastel);
 }
-.Informacion-NombreDelArchivo
+.Informacion-NombreDelDocumento
 {
     width: 70%;
     height: 100%;
     font-size: 1.3rem;
+    text-transform: uppercase;
     color: var(--GrisOscuro);
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.Informacion-ArchivoIcono,
-.Informacion-DescargarIcono,
-.Informacion-EliminarIcono
+.Informacion-IconoDocumento,
+.Informacion-IconoDescargar,
+.Informacion-IconoEliminar
 {
     width: 10%;
     height: 100%;
@@ -216,14 +243,14 @@
     align-items: center;
     justify-content: center;
 }
-.Informacion-DescargarIcono ion-icon
+.Informacion-IconoDescargar ion-icon
 {
     color: var(--Azul);
 }
-.Informacion-EliminarIcono ion-icon{
+.Informacion-IconoEliminar ion-icon{
     color: var(--Rojo);
 }
-.Informacion-DescargarIcono,
-.Informacion-EliminarIcono{
+.Informacion-IconoDescargar,
+.Informacion-IconoEliminar{
     cursor: pointer;
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/Principal.css">
     <link rel="stylesheet" href="css/Responsive.css">
     <link rel="stylesheet" href="css/VerInformacion.css">
-    <link rel="stylesheet" href="css/RegistrarUsuario.css">
+    <link rel="stylesheet" href="css/RegistrarContacto.css">
     <link rel="stylesheet" href="css/RegistrarCita.css">
     <title>Document</title>
 </head>
@@ -25,7 +25,7 @@
         <section class="Seccion-1">
             <div class="BarraBusqueda">
                 <ion-icon name="search-sharp" class="IconoBuscar"></ion-icon>
-                <input type="text" placeholder="Nombre, Concluido, Número, etc.." class="Buscar">
+                <input type="text" placeholder="Buscar" class="Buscar">
                 <ion-icon name="close-outline" class="IconoCerrar"></ion-icon>
             </div>
             <div class="AgregarRegistro">
@@ -147,6 +147,7 @@
     </div>
 
     <div class="VerInformacion">
+        
         <section class="Informacion-FotoPerfil">
             <!-- <img src="https://images.pexels.com/photos/1236678/pexels-photo-1236678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Foto del usuario" class="Informacion-ImgUsuario"> -->
             <img src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Foto del usuario" class="Informacion-ImgUsuario">
@@ -159,16 +160,21 @@
                 </div>
             </div>
         </section>
-        <section class="Informacion-Usuario">
-            <p class="Informacion-Nombre">Elvis Josué Cortez Rivera</p>
-            <div class="Informacion-Importante">
-                <div class="Informacion-Ocupacion">
-                    <span class="Informacion-IconoOcupacion"><ion-icon name="briefcase-outline"></ion-icon></span>
-                    <div class="Informacion-DetallesOcupacion">
-                        <p class="Informacion-TituloOcupacion">ocupación</p>
-                        <p class="Informacion-NombreOcupacion">Profesor</p>
+
+        <section class="Informacion-DatosDeLaCita">
+
+            <div class="Informacion-DatosDelContacto">
+
+                <p class="Informacion-TituloDatosContacto">información del contacto</p>
+
+                <div class="Informacion-NombreContacto">
+                    <span class="Informacion-IconoNombre"><ion-icon name="accessibility-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesNombre">
+                        <p class="Informacion-TituloNombre">Nombre</p>
+                        <p class="Informacion-NombreCompleto">elvis josue cortez rivera</p>
                     </div>
                 </div>
+
                 <div class="Informacion-Telefono">
                     <span class="Informacion-IconoTelefono"><ion-icon name="call-outline"></ion-icon></span>
                     <div class="Informacion-DetallesTelefono">
@@ -176,83 +182,111 @@
                         <p class="Informacion-NumeroTelefono">7441595198</p>
                     </div>
                 </div>
-                <div class="Informacion-Municipio">
+
+                <p class="Informacion-TituloDatosCita">información de la cita</p>
+
+                <div class="Informacion-FechaDeLaCita">
+                    <span class="Informacion-IconoFecha"><ion-icon name="calendar-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesFecha">
+                        <p class="Informacion-TituloFecha">fecha</p>
+                        <p class="Informacion-FechaFinal">21/12/2021</p>
+                    </div>
+                </div>
+
+                <div class="Informacion-HoraDeLaCita">
+                    <span class="Informacion-IconoHora"><ion-icon name="time-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesHora">
+                        <p class="Informacion-TituloHora">hora</p>
+                        <p class="Informacion-HoraFinal">12:20</p>
+                    </div>
+                </div>
+
+                <div class="Informacion-MunicipioDeLaCita">
                     <span class="Informacion-IconoMunicipio"><ion-icon name="map-outline"></ion-icon></span>
                     <div class="Informacion-DetallesMunicipio">
                         <p class="Informacion-TituloMunicipio">municipio</p>
-                        <p class="Informacion-NombreMunicipio">Acapulco de Juarez</p>
+                        <p class="Informacion-MunicipioFinal">acapulco de juarez</p>
                     </div>
                 </div>
-                <div class="Informacion-Colonia">
+
+                <div class="Informacion-ColoniaDeLaCita">
                     <span class="Informacion-IconoColonia"><ion-icon name="location-outline"></ion-icon></span>
                     <div class="Informacion-DetallesColonia">
-                        <p class="Informacion-TituloColonia">Colonia</p>
-                        <p class="Informacion-NombreColonia">Miguel de la madrid</p>
+                        <p class="Informacion-TituloColonia">colonia</p>
+                        <p class="Informacion-ColoniaFinal">miguel de la madrid</p>
                     </div>
                 </div>
+
+                <div class="Informacion-CalleDeLaCita">
+                    <span class="Informacion-IconoCalle"><ion-icon name="locate-outline"></ion-icon></span>
+                    <div class="Informacion-DetallesCalle">
+                        <p class="Informacion-TituloCalle">calle</p>
+                        <p class="Informacion-CalleFinal">vicente guerrero</p>
+                    </div>
+                </div>
+
+                <p class="Informacion-TituloAsuntoDeLaCita">asunto</p>
+                <p class="Informacion-FinalAsuntoDeLaCita">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe inventore eaque suscipit, in quos adipisci.</p>
+
+                <p class="Informacion-TituloComentariosDeLaCita">comentarios</p>
+                <p class="Informacion-FinalComentariosDeLaCita">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente repellendus velit, esse, quis illum delectus, sit magnam aspernatur ipsum facilis ipsa ullam voluptatem libero!</p>
+
+                <p class="Informacion-TituloDocumentos">Documentos</p>
+                <div class="Informacion-ListaDocumentos">
+                    <span class="Informacion-IconoDocumento"><ion-icon name="document-outline"></ion-icon></span>
+                    <div class="Informacion-NombreDelDocumento">
+                        Documento-1.mp4
+                    </div>
+                    <a href="#" class="Informacion-IconoDescargar" download="Nombre_Archivo">
+                        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                    </a>
+                    <span class="Informacion-IconoEliminar"><ion-icon name="remove-circle-outline"></ion-icon></span>
+                </div>
+                <div class="Informacion-ListaDocumentos">
+                    <span class="Informacion-IconoDocumento"><ion-icon name="document-outline"></ion-icon></span>
+                    <div class="Informacion-NombreDelDocumento">
+                        Documento-2.png
+                    </div>
+                    <a href="#" class="Informacion-IconoDescargar" download="Nombre_Archivo">
+                        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                    </a>
+                    <span class="Informacion-IconoEliminar"><ion-icon name="remove-circle-outline"></ion-icon></span>
+                </div>
+                <div class="Informacion-ListaDocumentos">
+                    <span class="Informacion-IconoDocumento"><ion-icon name="document-outline"></ion-icon></span>
+                    <div class="Informacion-NombreDelDocumento">
+                        Documento-3.pdf
+                    </div>
+                    <a href="#" class="Informacion-IconoDescargar" download="Nombre_Archivo">
+                        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                    </a>
+                    <span class="Informacion-IconoEliminar"><ion-icon name="remove-circle-outline"></ion-icon></span>
+                </div>
+                <div class="Informacion-ListaDocumentos">
+                    <span class="Informacion-IconoDocumento"><ion-icon name="document-outline"></ion-icon></span>
+                    <div class="Informacion-NombreDelDocumento">
+                        Documento-4.jpeg
+                    </div>
+                    <a href="#" class="Informacion-IconoDescargar" download="Nombre_Archivo">
+                        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                    </a>
+                    <span class="Informacion-IconoEliminar"><ion-icon name="remove-circle-outline"></ion-icon></span>
+                </div>
+                <div class="Informacion-ListaDocumentos">
+                    <span class="Informacion-IconoDocumento"><ion-icon name="document-outline"></ion-icon></span>
+                    <div class="Informacion-NombreDelDocumento">
+                        Documento-5.docx
+                    </div>
+                    <a href="#" class="Informacion-IconoDescargar" download="Nombre_Archivo">
+                        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                    </a>
+                    <span class="Informacion-IconoEliminar"><ion-icon name="remove-circle-outline"></ion-icon></span>
+                </div>
+
             </div>
-            <div class="Informacion-Asunto">
-                <p class="Informacion-PresentacionAsunto">asunto</p>
-                <p class="Informacion-DetallesAsunto">Reunion en la ofinica de BBVA a las 15:00 HRS</p>
-            </div>
-            <div class="Informacion-Comentarios">
-                <p class="Informacion-PresentacionComentario">comentarios</p>
-                <p class="Informacion-DetallesComentario">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt commodi nobis repudiandae. Libero consectetur facere accusantium, inventore dolor est magnam. Est unde sint magnam ex repellat voluptates quis perspiciatis atque impedit eligendi, laudantium optio vitae, nemo id quod quaerat officia tempore molestias quisquam sed corporis, quia dolore? Deserunt, blanditiis reiciendis.</p>
-            </div>
-            <div class="Informacion-Documentos">
-                <p class="Informacion-PresentacionDocumentos">Documentos</p>
-                    <div class="Informacion-ListaDocumentos">
-                        <span class="Informacion-ArchivoIcono"><ion-icon name="document-outline"></ion-icon></span>
-                        <div class="Informacion-NombreDelArchivo">
-                            Documento-1.mp4
-                        </div>
-                        <a href="" class="Informacion-DescargarIcono" download="Nombre_Archivo">
-                           <ion-icon name="arrow-down-circle-outline"></ion-icon>
-                        </a>
-                        <span class="Informacion-EliminarIcono"><ion-icon name="remove-circle-outline"></ion-icon></span>
-                    </div>
-                    <div class="Informacion-ListaDocumentos">
-                        <span class="Informacion-ArchivoIcono"><ion-icon name="document-outline"></ion-icon></span>
-                        <div class="Informacion-NombreDelArchivo">
-                            Documento-2.docx
-                        </div>
-                        <a href="" class="Informacion-DescargarIcono" download="Nombre_Archivo">
-                           <ion-icon name="arrow-down-circle-outline"></ion-icon>
-                        </a>
-                        <span class="Informacion-EliminarIcono"><ion-icon name="remove-circle-outline"></ion-icon></span>
-                    </div>
-                    <div class="Informacion-ListaDocumentos">
-                        <span class="Informacion-ArchivoIcono"><ion-icon name="document-outline"></ion-icon></span>
-                        <div class="Informacion-NombreDelArchivo">
-                            Documento-3.mp3
-                        </div>
-                        <a href="" class="Informacion-DescargarIcono" download="Nombre_Archivo">
-                           <ion-icon name="arrow-down-circle-outline"></ion-icon>
-                        </a>
-                        <span class="Informacion-EliminarIcono"><ion-icon name="remove-circle-outline"></ion-icon></span>
-                    </div>
-                    <div class="Informacion-ListaDocumentos">
-                        <span class="Informacion-ArchivoIcono"><ion-icon name="document-outline"></ion-icon></span>
-                        <div class="Informacion-NombreDelArchivo">
-                            Documento-4.pdf
-                        </div>
-                        <a href="" class="Informacion-DescargarIcono" download="Nombre_Archivo">
-                           <ion-icon name="arrow-down-circle-outline"></ion-icon>
-                        </a>
-                        <span class="Informacion-EliminarIcono"><ion-icon name="remove-circle-outline"></ion-icon></span>
-                    </div>
-                    <div class="Informacion-ListaDocumentos">
-                        <span class="Informacion-ArchivoIcono"><ion-icon name="document-outline"></ion-icon></span>
-                        <div class="Informacion-NombreDelArchivo">
-                            Docuemto-5.png
-                        </div>
-                        <a href="" class="Informacion-DescargarIcono" download="Nombre_Archivo">
-                           <ion-icon name="arrow-down-circle-outline"></ion-icon>
-                        </a>
-                        <span class="Informacion-EliminarIcono"><ion-icon name="remove-circle-outline"></ion-icon></span>
-                    </div>
-            </div>
+
         </section>
+
     </div>
 
     <div class="RegistrarContacto">
@@ -269,7 +303,7 @@
                 </div>
                 <div class="Form-Telefono">
                     <p class="Form-TituloTelefono">Telefono</p>
-                    <input type="text" maxlength="" id="" class="Form-InputTelefono" required>
+                    <input type="number" onKeyPress="if(this.value.length==18) return false;" maxlength="18" id="" class="Form-InputTelefono" onkeypress="SoloNumeros()" required>
                 </div>
                 <div class="Form-Ocupacion">
                     <p class="Form-TituloOcupacion">Ocupacion</p>
@@ -348,7 +382,6 @@
                 <button type="submit" id="" class="Form-GuardarRegistro">Guardar</button>
             </form>
     </div>
-
 <!-- 
     <script>
 
