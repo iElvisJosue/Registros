@@ -8,15 +8,18 @@ const MostrarInformacion = document.getElementsByClassName('MostrarInformacion')
 const VerInformacion = document.querySelector('.VerInformacion');
 const InformacionCerrar = document.querySelector('.Informacion-Cerrar');
 
-////// SECCION DE REGISTRAR COACTO   ///////
+////// SECCION DE REGISTRAR CONTACTO   ///////
 const RegistrarContacto = document.querySelector('.RegistrarContacto');
 const RegistrarCerrar = document.querySelector('.Form-IconoCerrar');
 
 
-////// SECCION DE REGISTRAR COACTO   ///////
+////// SECCION DE REGISTRAR CITA   ///////
 const RegistrarCita = document.querySelector('.RegistrarCita');
 const CitaCerrar = document.querySelector('.Form-IconoCitaCerrar');
 
+////// SECCION DE MOSTRAR DATOS COMPLETOS DEL USUARIO   ///////
+const BtnMostrarDatosUsuario = document.querySelector('.Informacion-IconoMostrar');
+const DatosDelUsuario = document.querySelector('.Informacion-DatosDelContacto');
 
 ////// FUCION PARA MOSTRAR LOS BOTONES DE AGREGAR CONTACTO O USUARIO ///////
 BtnNuevoRC.addEventListener('click', () => {
@@ -49,4 +52,10 @@ BtnNuevaCita.addEventListener('click', () => {
 })
 CitaCerrar.addEventListener('click', () => {
     RegistrarCita.classList.remove('RegistrarCita-Mostrar');
+})
+
+////// FUCION PARA MOSTRAR LA SECCION DE REGISTRAR CONTACTO  ///////
+BtnMostrarDatosUsuario.addEventListener('click', () => {
+    DatosDelUsuario.classList.toggle('Mostrar-Informacion-DatosDelContacto');
+    BtnMostrarDatosUsuario.classList.toggle('RotarIcono');
 })

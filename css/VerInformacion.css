@@ -20,7 +20,6 @@
     z-index: 1000;
     bottom: 0;
 }
-/*****************  CSS DE LA FOTO DE PERFIL DEL USUARIO *****************/
 .Informacion-FotoPerfil{
     position: relative;
     width: 50rem;
@@ -36,9 +35,6 @@
     height: auto;
     max-height: 100%;
 }
-
-
-/*****************  CSS DE LAS OPCIONES DE EDIT *****************/
 .Informacion-Modificaciones{
     position: absolute;
     top: 0;
@@ -74,44 +70,50 @@
     font-size: 2.5rem;
     cursor: pointer;
 }
-/*****************  CSS DE LA INFORMACION DEL USUARIO *****************/
-.Informacion-DatosDeLaCita{
+.Informacion-Cita{
     width: 50rem;
     height: auto;
-    background: var(--Blanco);
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
-/*****************  CSS DE LA INFORMACION IMPORTANTE *****************/
-.Informacion-DatosDelContacto{
+.Informacion-DatosDeLaCita{
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
-
-/*****************  CSS DE LA INFORMACION IMPORTANTE A DETALLES *****************/
-.Informacion-ListaDocumentos{
+.Informacion-DatosDelContacto{
+    width: 100%;
+    height: 11rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+.Informacion-TituloDatosContacto,
+.Informacion-TituloDatosCita
+{   
     grid-column: span 2;
-    border-radius: 1rem;
-    min-height: 7rem;
-    display: flex;
-    background: var(--GrisPastel);
+    font-size: 1.5rem;
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--GrisOscuro);
 }
-.Informacion-CalleDeLaCita{
-    grid-column: span 2 !important;
-}
-.Informacion-NombreContacto,
-.Informacion-Telefono,
-.Informacion-FechaDeLaCita,
-.Informacion-HoraDeLaCita,
-.Informacion-MunicipioDeLaCita,
-.Informacion-ColoniaDeLaCita,
-.Informacion-CalleDeLaCita
+.Contacto-Nombre,
+.Contacto-Telefono,
+.Contacto-Ocupacion,
+.Contacto-Municipio,
+.Contacto-Colonia,
+.Contacto-Calle,
+.Cita-Fecha,
+.Cita-Hora,
+.Cita-Municipio,
+.Cita-Colonia,
+.Cita-Calle
 {
     grid-column: span 1;
     border-radius: 1rem;
@@ -119,46 +121,58 @@
     display: flex;
     background: var(--GrisPastel);
 }
-.Informacion-IconoCalle{
-    width: 15% !important;
+.Cita-Calle{
+    grid-column: span 2 !important;
 }
-.Informacion-IconoNombre,
-.Informacion-IconoTelefono,
-.Informacion-IconoFecha,
-.Informacion-IconoHora,
-.Informacion-IconoMunicipio,
-.Informacion-IconoColonia,
-.Informacion-IconoCalle
+.Contacto-IconoNombre,
+.Contacto-IconoTelefono,
+.Contacto-IconoOcupacion,
+.Contacto-IconoMunicipio,
+.Contacto-IconoColonia,
+.Contacto-IconoCalle,
+.Cita-IconoFecha,
+.Cita-IconoHora,
+.Cita-IconoMunicipio,
+.Cita-IconoColonia,
+.Cita-IconoCalle
 {
     width: 30%;
     height: 100%;
     display: grid;
     place-items: center;
 }
-.Informacion-IconoNombre ion-icon,
-.Informacion-IconoTelefono ion-icon,
-.Informacion-IconoFecha ion-icon,
-.Informacion-IconoHora ion-icon,
-.Informacion-IconoMunicipio ion-icon,
-.Informacion-IconoColonia ion-icon,
-.Informacion-IconoCalle ion-icon,
-.Informacion-IconoDocumento ion-icon,
-.Informacion-IconoDescargar ion-icon,
-.Informacion-IconoEliminar ion-icon
+.Cita-IconoCalle{
+    width: 15% !important;
+}
+.Contacto-IconoNombre ion-icon,
+.Contacto-IconoTelefono ion-icon,
+.Contacto-IconoOcupacion ion-icon,
+.Contacto-IconoMunicipio ion-icon,
+.Contacto-IconoColonia ion-icon,
+.Contacto-IconoCalle ion-icon,
+.Cita-IconoFecha ion-icon,
+.Cita-IconoHora ion-icon,
+.Cita-IconoMunicipio ion-icon,
+.Cita-IconoColonia ion-icon,
+.Cita-IconoCalle ion-icon,
+.Cita-IconoDocumento ion-icon,
+.Cita-IconoDescargar ion-icon,
+.Cita-IconoEliminar ion-icon
 {
     font-size: 2.5rem;
     color: var(--GrisOscuro);
 }
-.Informacion-DetallesCalle{
-    width: 85% !important;
-}
-.Informacion-DetallesNombre,
-.Informacion-DetallesTelefono,
-.Informacion-DetallesFecha,
-.Informacion-DetallesHora,
-.Informacion-DetallesMunicipio,
-.Informacion-DetallesColonia,
-.Informacion-DetallesCalle
+.Contacto-DetallesNombre,
+.Contacto-DetallesTelefono,
+.Contacto-DetallesOcupacion,
+.Contacto-DetallesMunicipio,
+.Contacto-DetallesColonia,
+.Contacto-DetallesCalle,
+.Cita-DetallesFecha,
+.Cita-DetallesHora,
+.Cita-DetallesMunicipio,
+.Cita-DetallesColonia,
+.Cita-DetallesCalle
 {
     width: 70%;
     height: 100%;
@@ -167,62 +181,74 @@
     align-items: flex-start;
     justify-content: center;
 }
-.Informacion-TituloNombre,
-.Informacion-TituloTelefono,
-.Informacion-TituloFecha,
-.Informacion-TituloHora,
-.Informacion-TituloMunicipio,
-.Informacion-TituloColonia,
-.Informacion-TituloCalle
+.Cita-DetallesCalle{
+    width: 85% !important;
+}
+.Contacto-TituloNombre,
+.Contacto-TituloTelefono,
+.Contacto-TituloOcupacion,
+.Contacto-TituloMunicipio,
+.Contacto-TituloColonia,
+.Contacto-TituloCalle,
+.Cita-TituloFecha,
+.Cita-TituloHora,
+.Cita-TituloMunicipio,
+.Cita-TituloColonia,
+.Cita-TituloCalle
 {
     font-size: 1rem;
     text-transform: uppercase;
     color: var(--GrisOscuro);
 }
-.Informacion-NombreCompleto,
-.Informacion-NumeroTelefono,
-.Informacion-FechaFinal,
-.Informacion-HoraFinal,
-.Informacion-MunicipioFinal,
-.Informacion-ColoniaFinal,
-.Informacion-CalleFinal
+.Contacto-NombreCompleto,
+.Contacto-NumeroTelefono,
+.Contacto-NombreOcupacion,
+.Contacto-NombreMunicipio,
+.Contacto-NombreColonia,
+.Contacto-NombreCalle,
+.Cita-FechaFinal,
+.Cita-HoraFinal,
+.Cita-NombreMunicipio,
+.Cita-NombreColonia,
+.Cita-NombreCalle
 {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--GrisOscuro);
     text-transform: uppercase;
 }
-
-
-/*****************  CSS DE LA INFORMACION VARIOS *****************/
-.Informacion-TituloDatosContacto,
-.Informacion-TituloDatosCita,
-.Informacion-TituloAsuntoDeLaCita,
-.Informacion-TituloComentariosDeLaCita,
-.Informacion-TituloDocumentos
-{   
+.Cita-Asunto,
+.Cita-Comentarios,
+.Cita-Documentos
+{
     grid-column: span 2;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--GrisOscuro);
 }
-.Informacion-FinalAsuntoDeLaCita,
-.Informacion-FinalComentariosDeLaCita
+.Cita-AsuntoDetalles,
+.Cita-ComentariosDetalles
 {
     grid-column: span 2;
     font-size: 1.3rem;
     color: var(--GrisOscuro);
     text-transform: uppercase;
 }
-/*****************  CSS DE LA INFORMACION DE DOCUMENTOS *****************/
-.Informacion-ListaDocumentos{
+.Cita-ListaDocumentos{
+    grid-column: span 2;
+    border-radius: 1rem;
+    min-height: 7rem;
+    display: flex;
+    background: var(--GrisPastel);
+}
+.Cita-ListaDocumentos{
     height: 7rem;
     border-radius: 1rem;
     display: flex;
     background: var(--GrisPastel);
 }
-.Informacion-NombreDelDocumento
+.Cita-NombreDelDocumento
 {
     width: 70%;
     height: 100%;
@@ -233,9 +259,9 @@
     align-items: center;
     justify-content: flex-start;
 }
-.Informacion-IconoDocumento,
-.Informacion-IconoDescargar,
-.Informacion-IconoEliminar
+.Cita-IconoDocumento,
+.Cita-IconoDescargar,
+.Cita-IconoEliminar
 {
     width: 10%;
     height: 100%;
@@ -243,14 +269,32 @@
     align-items: center;
     justify-content: center;
 }
-.Informacion-IconoDescargar ion-icon
+.Cita-IconoDescargar ion-icon
 {
     color: var(--Azul);
 }
-.Informacion-IconoEliminar ion-icon{
+.Cita-IconoEliminar ion-icon{
     color: var(--Rojo);
 }
-.Informacion-IconoDescargar,
-.Informacion-IconoEliminar{
+.Cita-IconoDescargar,
+.Cita-IconoEliminar{
     cursor: pointer;
+}
+.Informacion-MostrarDatosUsuario{
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+.Informacion-IconoMostrar{
+    font-size: 2rem;
+    color: var(--GrisOscuro);
+    cursor: pointer;
+}
+.Mostrar-Informacion-DatosDelContacto{
+    height: auto !important;
+    transition: 5s !important;
+}
+.RotarIcono{
+    transform: rotate(-180deg);
 }

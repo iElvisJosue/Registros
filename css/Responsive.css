@@ -10,9 +10,13 @@
     }
 }
 @media (max-width: 540px){
-    .Informacion-FotoPerfil, .Informacion-DatosDeLaCita, .Form-Informacion, .Form-Cita{
+    .Informacion-FotoPerfil, 
+    .Informacion-Cita, 
+    .Form-Informacion, 
+    .Form-Cita{
         width: 100% !important;
     }
+    .Informacion-DatosDelContacto, 
     .Informacion-DatosDeLaCita{
         padding: 1rem !important;
     }

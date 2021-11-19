@@ -109,29 +109,39 @@
     top: calc(200% + 2rem);
     z-index: 1;
 }
-/*****************  CSS DEL FILTRO *****************/
-.Filtro{
-    width: 95%;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 /*****************  CSS DE LA SECCION 2 *****************/
 .Seccion-2{
     width: 95%;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; /* 10PX */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     padding-bottom: 1rem; /* 10PX */
 }
 
-
-
+/*****************  CSS DE LOS REGISTROS POR FECHA *****************/
+.RegistrosPorFecha{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+/*****************  CSS DEL FILTRO *****************/
+.Fecha{
+    grid-column: span 2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(--VerdePastel);
+    color: var(--VerdeTexto);
+}
 /*****************  CSS DEL REGISTRO *****************/
 .Registro{
-    width: 100%;
+    /* width: 100%; */
     height: 15rem; /* 150PX */
     grid-column: span 1;
     border-radius: 1rem; /* 10PX */
@@ -139,22 +149,22 @@
     gap: .5rem;
     overflow: hidden;
 }
-.Registro:nth-child(4n - 3){
-    background: var(--VerdePastel);
-}
-.Registro:nth-child(4n - 2){
-    background: var(--AzulPastel);
-}
-.Registro:nth-child(4n - 1){
-    background: var(--NaranjaPastel);
-}
-.Registro:nth-child(4n){
+.RegistrosPorFecha .Registro:nth-child(4n - 3){
     background: var(--RosaPastel);
 }
+.RegistrosPorFecha .Registro:nth-child(4n - 2){
+    background: var(--VerdePastel);
+}
+.RegistrosPorFecha .Registro:nth-child(4n - 1){
+    background: var(--AzulPastel);
+}
+.RegistrosPorFecha .Registro:nth-child(4n){
+    background: var(--NaranjaPastel);
+}
 .Registro.Concluido{
-    filter: grayscale(100%);
-    pointer-events: none;
-    background: var(--GrisPastel);
+    filter: grayscale(100%) !important;
+    pointer-events: none !important;
+    background: var(--GrisPastel) !important ;
 }
 .Registro.Concluido .ColoniaMunicipio, 
 .Registro.Concluido .Nombre, 
@@ -210,32 +220,32 @@
     opacity: .8;
 }
 .Registro:nth-child(4n - 3) .Asunto{
-    color: var(--VerdeTexto);
+    color: var(--RosaTexto);
     font-weight: bold;
 }
 .Registro:nth-child(4n - 3) .MostrarInformacion ion-icon{
-    color: var(--VerdeTexto);
+    color: var(--RosaTexto);
 }
 .Registro:nth-child(4n - 2) .Asunto{
-    color: var(--AzulTexto);
+    color: var(--VerdeTexto);
     font-weight: bold;
 }
 .Registro:nth-child(4n - 2) .MostrarInformacion ion-icon{
-    color: var(--AzulTexto);
+    color: var(--VerdeTexto);
 }
 .Registro:nth-child(4n - 1) .Asunto{
-    color: var(--NaranjaTexto);
+    color: var(--AzulTexto);
     font-weight: bold;
 }
 .Registro:nth-child(4n - 1) .MostrarInformacion ion-icon{
-    color: var(--NaranjaTexto);
+    color: var(--AzulTexto);
 }
 .Registro:nth-child(4n) .Asunto{
-    color: var(--RosaTexto);
+    color: var(--NaranjaTexto);
     font-weight: bold;
 }
 .Registro:nth-child(4n) .MostrarInformacion ion-icon{
-    color: var(--RosaTexto);
+    color: var(--NaranjaTexto);
 }
 
 /*****************  CSS DE VER USUARIO *****************/
