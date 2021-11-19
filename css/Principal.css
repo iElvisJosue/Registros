@@ -51,24 +51,29 @@
 .Buscar{
     width: 100%;
     height: 100%;
-    background:rgba(242,218,198,.5);
+    background:var(--RosaPastel);
     border-radius: 1rem; /* 10PX */
-    padding: 0px 3.5rem; /* 35PX */
+    padding: 0 8rem 0 1.5rem; /* 35PX */
     font-size: 1.5rem; /* 15PX */
 }
+.BotonBuscar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--RosaTexto);
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+}
 .IconoBuscar{
-    position: absolute;
-    font-size: 2rem; /* 20PX */
-    top: calc(50% - 1rem); /* 10PX */
-    left: 1rem; /* 10PX */
+    color: var(--Blanco);
+    font-size: 2.5em; /* 25PX */
+    font-weight: 900;
 }
-.IconoCerrar{
-    position: absolute;
-    font-size: 2rem; /* 20PX */
-    top: calc(50% - 1rem); /* 10PX */
-    right: 1rem; /* 10PX */
-}
-
 /*****************  CSS DE AGREGAR REGISTRO *****************/
 .AgregarRegistro{
     position: relative;
@@ -91,7 +96,7 @@
     height: 100%;
     font-size: 1rem; /* 10PX */
     line-height: 1rem; /* 10PX */
-    background: var(--AzulPastel);
+    background: var(--RosaTexto);
     border-radius: 1rem;
     cursor: pointer;
     transition: .5s;
@@ -110,6 +115,88 @@
     z-index: 1;
 }
 
+.FiltrosDeBusqueda{
+    width: 95%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.FiltroPorContacto{
+    position: relative;
+    width: 3rem;
+    height: 100%;
+    background: var(--RosaPastel);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.FiltroPorContacto:active{
+    transform: scale(.8);
+    transition: .5s;
+}
+.IconoFiltroContacto{
+    position: absolute;
+    top: calc(50% - .65rem);
+    left: calc(50% - .5rem);
+    font-size: 1rem;
+    color: var(--RosaTexto);
+}
+.IconoFiltroBusqueda{
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: calc(50% - 1.1rem);
+    font-size: 2.5rem;
+    color: var(--RosaTexto);
+}
+.FiltroPorFecha{
+    height: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.FiltroPorFecha input{
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    text-transform: uppercase;
+    color: var(--RosaTexto);
+    background: var(--RosaPastel) !important;
+    border-radius: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+.BotonBuscarPorFecha
+{
+    height: 100%;
+    width: 3rem;
+    background: var(--RosaPastel);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.BotonBorrarFecha{
+    height: 100%;
+    width: 0rem;
+    background: var(--RosaPastel);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.BotonBorrarFecha.Mostrar{
+    width: 3rem;
+}
+.IconoBuscarPorFecha,
+.IconoBorrarFecha,
+.IconoBuscarUsuario
+{
+    font-size: 2rem;
+    color: var(--RosaTexto);
+}
 /*****************  CSS DE LA SECCION 2 *****************/
 .Seccion-2{
     width: 95%;

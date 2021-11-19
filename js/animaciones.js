@@ -2,6 +2,7 @@
 const BtnNuevoRC = document.querySelector('.NuevoRC');
 const BtnNuevoContaco = document.querySelector('.NuevoContacto');
 const BtnNuevaCita = document.querySelector('.NuevaCita');
+const BtnBusquedaContacto = document.querySelector('.FiltroPorContacto');
 
 ////// SECCION DE MOSTRAR LA INFORMACION DEL CONTACTO  ///////
 const MostrarInformacion = document.getElementsByClassName('MostrarInformacion');
@@ -12,14 +13,17 @@ const InformacionCerrar = document.querySelector('.Informacion-Cerrar');
 const RegistrarContacto = document.querySelector('.RegistrarContacto');
 const RegistrarCerrar = document.querySelector('.Form-IconoCerrar');
 
-
 ////// SECCION DE REGISTRAR CITA   ///////
 const RegistrarCita = document.querySelector('.RegistrarCita');
-const CitaCerrar = document.querySelector('.Form-IconoCitaCerrar');
+const RegistrarCitaCerrar = document.querySelector('.Form-IconoCitaCerrar');
 
 ////// SECCION DE MOSTRAR DATOS COMPLETOS DEL USUARIO   ///////
 const BtnMostrarDatosUsuario = document.querySelector('.Informacion-IconoMostrar');
 const DatosDelUsuario = document.querySelector('.Informacion-DatosDelContacto');
+
+////// SECCION DE BUSCAR USUARIOS   ///////
+const BuscarContactoPorNombre = document.querySelector('.BuscarContacto');
+const CerrarContactoPorNombre = document.querySelector('.Form-IconoCerrarBuscarContacto');
 
 ////// FUCION PARA MOSTRAR LOS BOTONES DE AGREGAR CONTACTO O USUARIO ///////
 BtnNuevoRC.addEventListener('click', () => {
@@ -50,7 +54,7 @@ RegistrarCerrar.addEventListener('click', () => {
 BtnNuevaCita.addEventListener('click', () => {
     RegistrarCita.classList.add('RegistrarCita-Mostrar');
 })
-CitaCerrar.addEventListener('click', () => {
+RegistrarCitaCerrar.addEventListener('click', () => {
     RegistrarCita.classList.remove('RegistrarCita-Mostrar');
 })
 
@@ -58,4 +62,12 @@ CitaCerrar.addEventListener('click', () => {
 BtnMostrarDatosUsuario.addEventListener('click', () => {
     DatosDelUsuario.classList.toggle('Mostrar-Informacion-DatosDelContacto');
     BtnMostrarDatosUsuario.classList.toggle('RotarIcono');
+})
+
+////// FUCION PARA MOSTRAR LA SECCION DE REGISTRAR CONTACTO  ///////
+BtnBusquedaContacto.addEventListener('click', () => {
+    BuscarContactoPorNombre.classList.add('BuscarCotacto-Mostrar');
+})
+CerrarContactoPorNombre.addEventListener('click', () => {
+    BuscarContactoPorNombre.classList.remove('BuscarCotacto-Mostrar');
 })

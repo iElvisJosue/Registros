@@ -1,6 +1,10 @@
 /*****************  CSS RESPONSIVE *****************/
 @media (max-width: 1024px){
-    .Principal, .VerInformacion, .RegistrarContacto, .RegistrarCita{
+    .Principal, 
+    .VerInformacion, 
+    .RegistrarContacto, 
+    .RegistrarCita, 
+    .BuscarContacto{
         width: 100% !important;
     }
 }
@@ -13,7 +17,9 @@
     .Informacion-FotoPerfil, 
     .Informacion-Cita, 
     .Form-Informacion, 
-    .Form-Cita{
+    .Form-Cita,
+    .Form-InformacionContacto
+    {
         width: 100% !important;
     }
     .Informacion-DatosDelContacto, 
@@ -21,11 +27,17 @@
         padding: 1rem !important;
     }
     .Form-Informacion div:nth-child(1n + 2),
-    .Form-Cita div:nth-child(1n + 2)
+    .Form-Cita div:nth-child(1n + 2),
+    .Form-InformacionContacto div:nth-child(1n + 2)
     {
         padding: 0 1rem;
     }
-    .Form-GuardarRegistro{
+    .Form-ResultadoDeBusqueda{
+        padding: 0 !important;
+    }
+    .Form-GuardarRegistro,
+    .Form-ResultadoDeBusqueda
+    {
         width: calc(100% - 2rem) !important;
     }
 }
