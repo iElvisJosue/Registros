@@ -66,8 +66,8 @@ BtnMostrarDatosUsuario.addEventListener('click', () => {
 
 ////// FUCION PARA MOSTRAR LA SECCION DE REGISTRAR CONTACTO  ///////
 BtnBusquedaContacto.addEventListener('click', () => {
-    BuscarContactoPorNombre.classList.add('BuscarCotacto-Mostrar');
+    BuscarContactoPorNombre.classList.add('BuscarContacto-Mostrar');
 })
 CerrarContactoPorNombre.addEventListener('click', () => {
-    BuscarContactoPorNombre.classList.remove('BuscarCotacto-Mostrar');
+    BuscarContactoPorNombre.classList.remove('BuscarContacto-Mostrar');
 })

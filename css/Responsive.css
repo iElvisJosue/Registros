@@ -40,6 +40,9 @@
     {
         width: calc(100% - 2rem) !important;
     }
+    .Form-ContactoTitulo{
+        font-size: 2rem !important;
+    }
 }
 @media (max-width: 414px){
     *{
@@ -50,5 +53,10 @@
     }
     .Seccion-1 .AgregarRegistro{
         width: 15%;
+    }
+}
+@media (max-width: 375px){
+    .Form-ContactoTitulo{
+        font-size: 1.6rem !important;
     }
 }

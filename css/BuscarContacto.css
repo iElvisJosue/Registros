@@ -17,7 +17,7 @@
 .Form-ResultadoDeBusqueda::-webkit-scrollbar{
     display: none;
 }
-.BuscarCotacto-Mostrar{
+.BuscarContacto-Mostrar{
     z-index: 1000;
     bottom: 0;
 }
@@ -51,10 +51,29 @@
 }
 .Form-ContactoTitulo{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--GrisOscuro);
-    text-align: center;
+}
+.Form-ModificarContacto{
+    display: flex;
+}
+.Form-ContactoEditar{
+    background: var(--Azul);
+}
+.Form-ContactoEliminar{
+    background: var(--Rojo);
+}
+.Form-ContactoEditar,
+.Form-ContactoEliminar
+{
+    padding: .5rem;
+    color: var(--Blanco);
+    font-size: 2.5rem;
+    cursor: pointer;
 }
 .Form-BuscarContactoPorNombre{
     position: relative;
