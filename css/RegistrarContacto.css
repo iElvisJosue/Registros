@@ -12,11 +12,8 @@
     bottom: -100%;
     transition: .5s;
     overflow: auto;
-    background: yellow;
 }
-.RegistrarContacto::-webkit-scrollbar,
-.Form-Informacion::-webkit-scrollbar
-{
+.RegistrarContacto::-webkit-scrollbar{
     display: none;
 }
 .RegistrarContacto-Mostrar{
@@ -27,13 +24,12 @@
 .Form-Informacion{
     position: relative;
     width: 50rem;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
     padding-bottom: 1rem;
-    overflow: auto;
 }
 
 /*****************  CSS DEL FORMULARIO DEL BOTON DE CERRAR EL FORMULARIO *****************/

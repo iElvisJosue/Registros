@@ -12,11 +12,8 @@
     bottom: -100%;
     transition: .5s;
     overflow: auto;
-    background: black;
 }
-.BuscarContacto::-webkit-scrollbar,
-.Form-InformacionContacto::-webkit-scrollbar
-{
+.BuscarContacto::-webkit-scrollbar{
     display: none;
 }
 .BuscarContacto-Mostrar{
@@ -26,13 +23,12 @@
 .Form-InformacionContacto{
     position: relative;
     width: 50rem;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
     padding-bottom: 1rem;
-    overflow: auto;
 }
 .Form-TituloBuscarContacto{
     width: 100%;

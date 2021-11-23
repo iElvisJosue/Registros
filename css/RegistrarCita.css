@@ -3,7 +3,7 @@
     position: absolute;
     width: 100rem; /* 1000PX */
     height: 100%;
-    background: pink;
+    background: var(--Blanco);
     box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
     display: flex;
     flex-direction: column;
@@ -13,9 +13,7 @@
     transition: .5s;
     overflow: auto;
 }
-.RegistrarCita::-webkit-scrollbar,
-.Form-Cita::-webkit-scrollbar
-{
+.RegistrarCita::-webkit-scrollbar{
     display: none;
 }
 .RegistrarCita-Mostrar{
@@ -26,13 +24,12 @@
 .Form-Cita{
     position: relative;
     width: 50rem;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
     padding-bottom: 1rem;
-    overflow: auto;
 }
 
 /*****************  CSS DEL FORMULARIO DEL BOTON DE CERRAR EL FORMULARIO *****************/
