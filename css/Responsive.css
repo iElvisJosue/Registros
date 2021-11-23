@@ -4,7 +4,8 @@
     .VerInformacion, 
     .RegistrarContacto, 
     .RegistrarCita, 
-    .BuscarContacto{
+    .BuscarContacto,
+    .EditarCita{
         width: 100% !important;
     }
 }
@@ -13,12 +14,21 @@
         grid-column: span 2;
     }
 }
+@media (max-width: 736px){
+    .IniciarSesion{
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 0;
+        overflow: auto !important;
+    }
+}
 @media (max-width: 540px){
     .Informacion-FotoPerfil, 
     .Informacion-Cita, 
     .Form-Informacion, 
     .Form-Cita,
-    .Form-InformacionContacto
+    .Form-InformacionContacto,
+    .Form-EditarCita
     {
         width: 100% !important;
     }
@@ -28,19 +38,28 @@
     }
     .Form-Informacion div:nth-child(1n + 2),
     .Form-Cita div:nth-child(1n + 2),
-    .Form-InformacionContacto div:nth-child(1n + 2)
+    .Form-InformacionContacto div:nth-child(1n + 2),
+    .Form-EditarCita div:nth-child(1n + 2)
     {
         padding: 0 1rem;
+    }
+    .Form-ModificarContacto{
+        padding: 0 !important;
     }
     .Form-ResultadoDeBusqueda{
         padding: 0 !important;
     }
-    .Form-GuardarRegistro,
+    .Form-GuardarRegistroContacto,
+    .Form-GuardarRegistroCita,
+    .Form-GuardarEdicionContacto,
+    .Form-EditarCitarGuardar,
     .Form-ResultadoDeBusqueda
     {
         width: calc(100% - 2rem) !important;
     }
-    .Form-ContactoTitulo{
+    .Form-ContactoTitulo, 
+    .Form-TituloRegistrar
+    {
         font-size: 2rem !important;
     }
 }
@@ -57,6 +76,6 @@
 }
 @media (max-width: 375px){
     .Form-ContactoTitulo{
-        font-size: 1.6rem !important;
+        font-size: 1.8rem !important;
     }
 }

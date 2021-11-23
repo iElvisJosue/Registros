@@ -291,7 +291,6 @@
 } 
 .ColoniaMunicipio, .Nombre, .Asunto{
     width: 100%;
-    text-align: justify;
 }
 .Nombre{
     font-size: 1.5rem; /* 15PX */

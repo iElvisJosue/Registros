@@ -93,7 +93,26 @@
     font-weight: bold;
     text-transform: uppercase;
 }
-.Form-CitaInputNombre,
+.Form-CitaInputNombre{
+    position: relative;
+    padding: 0 !important;
+}
+.Form-BotonAbrirContacto{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.2rem;
+    height: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Form-BotonAbrirContacto ion-icon{
+    font-size: 2rem;
+}
+.Form-InputBuscarContactoEnCita,
 .Form-CitaInputFecha,
 .Form-CitaInputHora,
 .Form-CitaInputMunicipio,
@@ -111,8 +130,9 @@
     padding: 1rem 0;
     border: transparent;
     border-bottom: 1px solid var(--GrisOscuro);
+    background: var(--Blanco);
 }
-.Form-GuardarRegistro{
+.Form-GuardarRegistroCita{
     width: 100%;
     background: var(--AzulPastel);
     color: var(--Blanco);
@@ -121,7 +141,7 @@
     text-transform: uppercase;
     pointer-events: none;
 }
-.Form-GuardarRegistro.Completos{
+.Form-GuardarRegistroCita.Completos{
     background: var(--Azul);
     pointer-events: all;
     cursor: pointer;

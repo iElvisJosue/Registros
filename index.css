@@ -1,0 +1,105 @@
+:root{
+    --Negro: #000000;
+    --Blanco: #ffffff;
+    --AzulPastel: #a3cad6;
+    --AzulTexto: #659393;
+    --VerdePastel: #c2d6bd;
+    --VerdeTexto: #6e9566;
+    --NaranjaPastel: #f2dac6;
+    --NaranjaTexto: #db9862;
+    --RosaPastel: #efe0e0;
+    --RosaTexto: #cb9494;
+    --GrisPastel: #eeeeee;
+    --GrisOscuro: #747476;
+    --Rojo: #E7625F;
+    --Azul: #41729F;
+    --Verde: #81B622;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+/*****************  CSS DEL BODY *****************/
+body{
+    background: linear-gradient(45deg, var(--RosaTexto), var(--AzulTexto));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+button, input{
+    outline: none;
+    border: none;
+}
+.IniciarSesion{
+    width: 40rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--Blanco);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.IniciarSesion::-webkit-scrollbar{
+    display: none;
+}
+.IniciarSesion-Icono{
+    min-height: 6rem;
+    font-size: 5rem;
+    color: var(--GrisOscuro);
+}
+.IniciarSesion-Titulo{
+    height: auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--GrisOscuro);
+}
+.IniciarSesion-Usuario, .IniciarSesion-Contrasena{
+    position: relative;
+    width: 100%;
+    min-height: 6rem;
+}
+.IniciarSesion-UsuarioSubtitulo, .IniciarSesion-ContrasenaSubtitulo{
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    color: var(--GrisOscuro);
+}
+.IniciarSesion-InputUsuario, .IniciarSesion-InputContrasena{
+    width: 100%;
+    min-height: 6rem;
+    padding: .5rem 3rem 0 1rem;
+    background: var(--GrisPastel);
+    border-radius: 1rem;
+    color: var(--Negro);
+    font-size: 1.2rem;
+}
+.IniciarSesion-IconoUsuario, .IniciarSesion-IconoContrasena{
+    position: absolute;
+    font-size: 2.5rem;
+    top: calc(50% - 1.25rem);
+    right: .5rem;
+    color: var(--GrisOscuro);
+}
+.IniciarSesion-Ingresar{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 5rem;
+    min-height: 5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--Blanco);
+    border-radius: 1rem;
+    background: linear-gradient(45deg, var(--RosaTexto), var(--AzulTexto));
+    cursor: pointer;
+}

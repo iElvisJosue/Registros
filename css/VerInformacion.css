@@ -156,8 +156,7 @@
 .Cita-IconoColonia ion-icon,
 .Cita-IconoCalle ion-icon,
 .Cita-IconoDocumento ion-icon,
-.Cita-IconoDescargar ion-icon,
-.Cita-IconoEliminar ion-icon
+.Cita-IconoDescargar ion-icon
 {
     font-size: 2.5rem;
     color: var(--GrisOscuro);
@@ -250,7 +249,7 @@
 }
 .Cita-NombreDelDocumento
 {
-    width: 70%;
+    width: 90%;
     height: 100%;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -260,8 +259,7 @@
     justify-content: flex-start;
 }
 .Cita-IconoDocumento,
-.Cita-IconoDescargar,
-.Cita-IconoEliminar
+.Cita-IconoDescargar
 {
     width: 10%;
     height: 100%;
@@ -273,11 +271,7 @@
 {
     color: var(--Azul);
 }
-.Cita-IconoEliminar ion-icon{
-    color: var(--Rojo);
-}
-.Cita-IconoDescargar,
-.Cita-IconoEliminar{
+.Cita-IconoDescargar{
     cursor: pointer;
 }
 .Informacion-MostrarDatosUsuario{

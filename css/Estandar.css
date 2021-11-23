@@ -16,18 +16,9 @@
     --Verde: #81B622;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 10px;
-    font-family: 'Poppins', sans-serif;
-    color: #000000;
-}
-
 /*****************  CSS DEL BODY *****************/
 body{
-    background: var(--AzulPastel);
+    background: var(--RosaTexto);
     width: 100%;
     height: 100vh;
     display: flex;

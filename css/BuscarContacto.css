@@ -13,8 +13,7 @@
     transition: .5s;
     overflow: auto;
 }
-.BuscarContacto::-webkit-scrollbar, 
-.Form-ResultadoDeBusqueda::-webkit-scrollbar{
+.BuscarContacto::-webkit-scrollbar{
     display: none;
 }
 .BuscarContacto-Mostrar{
@@ -75,23 +74,6 @@
     font-size: 2.5rem;
     cursor: pointer;
 }
-.Form-BuscarContactoPorNombre{
-    position: relative;
-}
-.Form-ResultadoDeBusqueda{
-    position: absolute;
-    top: 6rem;
-    width: 100%;
-    height: 0;
-    max-height: 20rem;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    background: var(--Blanco);
-    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.75);
-}
-.Form-BuscarContactoPorNombre,
 .Form-ContactoNombre,
 .Form-ContactoTelefono,
 .Form-ContactoOcupacion,
@@ -106,16 +88,7 @@
     display: flex;
     flex-direction: column;
 }
-.Form-ContactoResultadoBusqueda{
-    padding: .5rem .5rem;
-    height: auto !important;
-}
-.Form-ContactoResultadoBusqueda:hover{
-    background: var(--GrisPastel);
-    cursor: pointer;
-}
 .Form-TituloBuscarNombrePorContacto,
-.Form-ContactoResultadoBusqueda,
 .Form-TituloContactoNombre,
 .Form-TituloContactoTelefono,
 .Form-TituloContactoOcupacion,
@@ -178,7 +151,7 @@
 .Form-InputContactoTelefono::-webkit-inner-spin-button{
     appearance: none;
 }
-.Form-GuardarRegistro{
+.Form-GuardarEdicionContacto{
     width: 100%;
     background: var(--AzulPastel);
     color: var(--Blanco);
@@ -187,7 +160,7 @@
     text-transform: uppercase;
     pointer-events: none;
 }
-.Form-GuardarRegistro.Completos{
+.Form-GuardarEdicionContacto.Completos{
     background: var(--Azul);
     pointer-events: all;
     cursor: pointer;
@@ -196,7 +169,4 @@
     border-bottom: 1px solid var(--GrisOscuro);
     background: none;
     pointer-events: all;
-}
-.MostrarResultadosDeBusqueda{
-    height: auto;
 }
